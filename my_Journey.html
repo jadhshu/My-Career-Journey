@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Journey | My Career Story</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        :root {
+            --hilti-red: #C00000;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #000;
+            color: white;
+        }
+
+        .section-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .overlay {
+            background: linear-gradient(to right, rgba(0,0,0,0.85) 30%, rgba(0,0,0,0.4) 100%);
+            position: absolute;
+            inset: 0;
+        }
+
+        .hilti-accent {
+            color: var(--hilti-red);
+        }
+
+        .hilti-button {
+            background-color: var(--hilti-red);
+            transition: all 0.3s ease;
+        }
+
+        .hilti-button:hover {
+            background-color: #e60000;
+            transform: translateY(-2px);
+        }
+
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--hilti-red);
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .timeline-dot {
+            width: 12px;
+            height: 12px;
+            background-color: var(--hilti-red);
+            border-radius: 50%;
+            position: absolute;
+            left: -31px;
+            top: 8px;
+        }
+
+        .content-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .content-list i {
+            margin-top: 4px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter uppercase">
+                <span class="hilti-accent">MY</span> Journey
+            </div>
+            <div class="hidden md:flex space-x-4 lg:space-x-8 text-[10px] lg:text-xs font-semibold uppercase tracking-widest">
+                <a href="#section1" class="nav-link">17-19</a>
+                <a href="#section2" class="nav-link">20-21</a>
+                <a href="#section3" class="nav-link">22</a>
+                <a href="#section4" class="nav-link">24</a>
+                <a href="#section5" class="nav-link">25</a>
+                <a href="#section6" class="nav-link">Highlights</a>
+                <a href="#section7" class="nav-link">Today</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: 2017–2019 -->
+    <section id="section1" class="section-bg min-h-screen flex items-center pt-20" style="background-image: url('1.jpg');">
+        <div class="overlay"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-8 md:px-12 reveal">
+            <div class="mb-2 uppercase tracking-[0.3em] hilti-accent font-bold">Foundation & First Connection to Hilti</div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 italic">2017 – 2019</h1>
+            <p class="text-lg text-gray-300 mb-8 leading-relaxed max-w-2xl">
+                The journey began in the heart of German engineering excellence at RWTH Aachen. This period was defined by academic rigor and the first professional spark at Hilti.
+            </p>
+            <ul class="content-list relative border-l border-white/20 pl-8 ml-2">
+                <li class="relative">
+                    <div class="timeline-dot"></div>
+                    <i data-lucide="graduation-cap" class="hilti-accent w-5 h-5"></i>
+                    <span>Started Master’s in Germany (RWTH Aachen & MSM)</span>
+                </li>
+                <li class="relative">
+                    <div class="timeline-dot"></div>
+                    <i data-lucide="brain-circuit" class="hilti-accent w-5 h-5"></i>
+                    <span>Developed fundamentals in systems engineering and structured thinking</span>
+                </li>
+                <li class="relative">
+                    <div class="timeline-dot"></div>
+                    <i data-lucide="briefcase" class="hilti-accent w-5 h-5"></i>
+                    <span><strong>2019:</strong> Joined Hilti as a Working Student in Research & Testing</span>
+                </li>
+                <li class="relative">
+                    <div class="timeline-dot"></div>
+                    <i data-lucide="clipboard-check" class="hilti-accent w-5 h-5"></i>
+                    <span>Supported functional/unit testing and verification tasks</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SECTION 2: 2020–2021 -->
+    <section id="section2" class="section-bg min-h-screen flex items-center" style="background-image: url('2.jpg');">
+        <div class="overlay"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-8 md:px-12 text-right flex flex-col items-end reveal">
+            <div class="mb-2 uppercase tracking-[0.3em] hilti-accent font-bold">Deep Dive into PLM & Compliance</div>
+            <h2 class="text-4xl md:text-6xl font-bold mb-6 italic">2020 – 2021</h2>
+            <p class="text-lg text-gray-300 mb-8 leading-relaxed max-w-2xl">
+                Transitioning to core data and compliance structures at the Hilti Kaufering, Germany.
+            </p>
+            <ul class="content-list relative border-r border-white/20 pr-8 mr-2 text-left md:text-right">
+                <li class="relative flex-row-reverse">
+                    <div class="timeline-dot hidden md:block" style="left: auto; right: -31px;"></div>
+                    <i data-lucide="database" class="hilti-accent w-5 h-5"></i>
+                    <span>Working Student in Product Compliance / Data Maintenance</span>
+                </li>
+                <li class="relative flex-row-reverse">
+                    <div class="timeline-dot hidden md:block" style="left: auto; right: -31px;"></div>
+                    <i data-lucide="settings-2" class="hilti-accent w-5 h-5"></i>
+                    <span>Worked with SAP Ariba, Jira, Confluence, DOORS NG</span>
+                </li>
+                <li class="relative flex-row-reverse">
+                    <div class="timeline-dot hidden md:block" style="left: auto; right: -31px;"></div>
+                    <i data-lucide="scroll-text" class="hilti-accent w-5 h-5"></i>
+                    <span><strong>2021:</strong> Completed Master Thesis on SCIP process optimization</span>
+                </li>
+                <li class="relative flex-row-reverse">
+                    <div class="timeline-dot hidden md:block" style="left: auto; right: -31px;"></div>
+                    <i data-lucide="git-branch" class="hilti-accent w-5 h-5"></i>
+                    <span>Strengthened interest in lifecycle processes and structured workflows</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SECTION 3: 2022 -->
+    <section id="section3" class="section-bg min-h-screen flex items-center" style="background-image: url('3 (1).jpg');">
+        <div class="overlay"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-8 md:px-12 reveal">
+            <div class="mb-2 uppercase tracking-[0.1em] hilti-accent font-bold">Transition to External Role (Hilti Entwicklungsgesellschaft mbH)</div>
+            <h2 class="text-4xl md:text-6xl font-bold mb-6 italic">2022</h2>
+            <p class="text-lg text-gray-300 mb-8 leading-relaxed max-w-2xl">
+                Joined Hilti as an External Test Manager in Kaufering, bridging hardware and digital ecosystems.
+            </p>
+            <ul class="content-list relative border-l border-white/20 pl-8 ml-2 text-sm md:text-base">
+                <li class="relative">
+                    <div class="timeline-dot"></div>
+                    <i data-lucide="radio-receiver" class="hilti-accent w-5 h-5"></i>
+                    <span>Joined Hilti as an External Test Manager</span>
+                </li>
+                <li class="relative">
+                    <div class="timeline-dot"></div>
+                    <i data-lucide="shield-check" class="hilti-accent w-5 h-5"></i>
+                    <span>Supported Runtime Tag (AI T320‑R) from ideation to launch</span>
+                </li>
+                <li class="relative">
+                    <div class="timeline-dot"></div>
+                    <i data-lucide="package-search" class="hilti-accent w-5 h-5"></i>
+                    <span>Coordinated system, verification, and certification testing</span>
+                </li>
+                <li class="relative">
+                    <div class="timeline-dot"></div>
+                    <i data-lucide="layers" class="hilti-accent w-5 h-5"></i>
+                    <span>Built strong product lifecycle and QA foundation</span>
+                </li>
+                <li class="relative">
+                    <div class="timeline-dot"></div>
+                    <i data-lucide="box" class="hilti-accent w-5 h-5"></i>
+                    <span>Took responsibility for Accessories Product Care, including Metal Holders, Passive Labels, and NFC Tags</span>
+                </li>
+                <li class="relative">
+                    <div class="timeline-dot"></div>
+                    <i data-lucide="network" class="hilti-accent w-5 h-5"></i>
+                    <span>Gained deeper understanding of accessory lifecycles and their integration with digital solutions</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SECTION 4: 2024 -->
+    <section id="section4" class="section-bg min-h-screen flex items-center" style="background-image: url('4.jpg');">
+        <div class="overlay"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-8 md:px-12 text-right flex flex-col items-end reveal">
+            <div class="mb-2 uppercase tracking-[0.3em] hilti-accent font-bold">Ownership of Tag & Scan App Requirements & Enablement</div>
+            <h2 class="text-4xl md:text-6xl font-bold mb-6 italic">2024</h2>
+            <p class="text-lg text-gray-300 mb-8 leading-relaxed max-w-2xl">
+                Driving software requirements and enablement across global communities.
+            </p>
+            <ul class="content-list relative border-r border-white/20 pr-8 mr-2 text-left md:text-right">
+                <li class="relative flex-row-reverse">
+                    <div class="timeline-dot hidden md:block" style="left: auto; right: -31px;"></div>
+                    <i data-lucide="smartphone-nfc" class="hilti-accent w-5 h-5"></i>
+                    <span>Took ownership of Tag & Scan App requirements and testing activities</span>
+                </li>
+                <li class="relative flex-row-reverse">
+                    <div class="timeline-dot hidden md:block" style="left: auto; right: -31px;"></div>
+                    <i data-lucide="contact" class="hilti-accent w-5 h-5"></i>
+                    <span>Closely aligned with the SDK development team to support feature development and validation</span>
+                </li>
+                <li class="relative flex-row-reverse">
+                    <div class="timeline-dot hidden md:block" style="left: auto; right: -31px;"></div>
+                    <i data-lucide="users-round" class="hilti-accent w-5 h-5"></i>
+                    <span>Acted as Single Point of Contact (SPOC) for Warehouse and Hilti Store communities during rollout</span>
+                </li>
+                <li class="relative flex-row-reverse">
+                    <div class="timeline-dot hidden md:block" style="left: auto; right: -31px;"></div>
+                    <i data-lucide="graduation-cap" class="hilti-accent w-5 h-5"></i>
+                    <span>Conducted global user trainings to support adoption and ensure successful launch</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SECTION 5: 2025 -->
+    <section id="section5" class="section-bg min-h-screen flex items-center" style="background-image: url('5.jpg');">
+        <div class="overlay"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-8 md:px-12 reveal">
+            <div class="mb-2 uppercase tracking-[0.3em] hilti-accent font-bold">Expanded Scope & Product Care Responsibilities</div>
+            <h2 class="text-4xl md:text-6xl font-bold mb-6 italic">2025</h2>
+            <p class="text-lg text-gray-300 mb-8 leading-relaxed max-w-2xl">
+                Taking on broader responsibilities across multiple concurrent projects and Product Care at Hilti Kaufering, managing defects and ensuring long-term product excellence.
+            </p>
+            <ul class="content-list relative border-l border-white/20 pl-8 ml-2">
+                <li class="relative">
+                    <div class="timeline-dot"></div>
+                    <i data-lucide="clipboard-list" class="hilti-accent w-5 h-5"></i>
+                    <span>Took on responsibilities across multiple projects and product care</span>
+                </li>
+                <li class="relative">
+                    <div class="timeline-dot"></div>
+                    <i data-lucide="search" class="hilti-accent w-5 h-5"></i>
+                    <span>Worked on defect analysis, documentation, and tracking</span>
+                </li>
+                <li class="relative">
+                    <div class="timeline-dot"></div>
+                    <i data-lucide="file-text" class="hilti-accent w-5 h-5"></i>
+                    <span>Gained deeper insight into lifecycle and process challenges</span>
+                </li>
+                <li class="relative">
+                    <div class="timeline-dot"></div>
+                    <i data-lucide="users" class="hilti-accent w-5 h-5"></i>
+                    <span>Strengthened cross-functional coordination skills</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SECTION 6: KEY HIGHLIGHTS -->
+    <section id="section6" class="section-bg min-h-screen flex items-center" style="background-image: url('5.avif');">
+        <div class="overlay"></div>
+        <div class="relative z-10 max-w-5xl mx-auto px-8 md:px-12 reveal">
+            <div class="mb-4 text-center uppercase tracking-[0.4em] hilti-accent font-bold">Impact Delivered & Collaboration Built</div>
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-center italic">Achievements & Network</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <h3 class="text-xl font-bold flex items-center gap-2"><i data-lucide="award" class="hilti-accent"></i> Achievements</h3>
+                    <ul class="space-y-3 text-gray-300 text-base">
+                        <li>• Successful launch of Runtime Tag (AI T320‑R)</li>
+                        <li>• Launch of Tag & Scan App, enabling faster and more efficient workflows for Warehouses, Hilti Stores, and 3PL partners, resulting in time savings</li>
+                        <li>• Ongoing product care responsibility for AI T320 Runtime Tag, Passive Labels, Metal Holders, and NFC Tags</li>
+                    </ul>
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-xl font-bold flex items-center gap-2"><i data-lucide="users" class="hilti-accent"></i> Network & Collaboration</h3>
+                    <ul class="space-y-3 text-gray-300 text-base">
+                        <li>• Strong collaboration with cross-functional development and test teams</li>
+                        <li>• Active support to Customer Advocates Team in analyzing and resolving customer-reported issues</li>
+                        <li>• Close coordination with external testing and certification partners</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: 2026 / TODAY -->
+    <section id="section7" class="section-bg min-h-screen flex items-center py-12" style="background-image: url('7.jpg');">
+        <div class="overlay"></div>
+        <div class="relative z-10 max-w-5xl mx-auto px-8 md:px-12 text-center reveal">
+            <!-- Heading -->
+            <div class="mb-4 text-xs md:text-sm uppercase tracking-[0.4em] hilti-accent font-bold">
+                Future Direction & Interest
+            </div>
+            <h2 class="text-4xl md:text-7xl font-bold mb-8 uppercase italic leading-none">
+                2026 / Today
+            </h2>
+            <!-- Intro -->
+            <p class="text-lg md:text-2xl text-gray-200 mb-12 max-w-4xl mx-auto font-light leading-relaxed">
+                Building on a strong foundation in 
+                <span class="hilti-accent font-semibold">product lifecycle</span>, 
+                <span class="hilti-accent font-semibold">testing</span>, and 
+                <span class="hilti-accent font-semibold">product compliance</span>, 
+                along with cross-functional collaboration. 
+                I am focused on evolving into roles that combine structured execution with 
+                <span class="hilti-accent font-semibold">end-to-end ownership</span>.
+            </p>
+            <!-- Content Blocks -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-left mb-14">
+                
+                <!-- Focus Areas -->
+                <div class="bg-white/5 p-2 rounded-xl border border-white/10 backdrop-blur-md hover:-translate-y-1 transition-all duration-300">
+                    <h3 class="font-bold text-white mb-4 flex items-center gap-2">
+                        <i data-lucide="compass" class="hilti-accent w-5 h-5"></i>
+                        Focus Areas
+                    </h3>
+
+                    <ul class="space-y-3 text-gray-300 text-sm md:text-base">
+                        <li class="flex gap-2">
+                            <span>•</span>
+                            <span>Exploring opportunities across industries and dynamic project environments</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span>•</span>
+                            <span>Interest in Project Coordination, Process Improvement, Lifecycle Management support, PMO-type roles, and Product Compliance functions</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span>•</span>
+                            <span>Focus on structured workflows and lifecycle-driven execution</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span>•</span>
+                            <span>Desire to contribute to cross-functional initiatives with end-to-end ownership</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Strengths -->
+                <div class="bg-white/5 p-2 rounded-xl border border-white/10 backdrop-blur-md hover:-translate-y-1 transition-all duration-300">
+                    <h3 class="font-bold text-white mb-4 flex items-center gap-2">
+                        <i data-lucide="layers" class="hilti-accent w-5 h-5"></i>
+                        Strengths I Bring
+                    </h3>
+
+                    <ul class="space-y-3 text-gray-300 text-sm md:text-base">
+                        <li class="flex gap-2">
+                            <span>•</span>
+                            <span>Structured thinking and analytical problem-solving mindset</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span>•</span>
+                            <span>Hands-on experience across end-to-end product lifecycle phases</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span>•</span>
+                            <span>Experience in product compliance and regulatory-driven processes</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span>•</span>
+                            <span>Strong collaboration across engineering, testing, and business teams</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <span>•</span>
+                            <span>Ability to translate requirements into clear, executable actions</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+                <!-- Highlight Tags -->
+                <div class="flex flex-wrap justify-center gap-2 mb-14">
+                    
+                    <div class="px-3 py-3 bg-white/10 border border-white/20 rounded-full flex items-center gap-2">
+                        <i data-lucide="workflow" class="w-4 h-4 hilti-accent"></i>
+                        <span class="text-xs uppercase tracking-widest">Lifecycle Management</span>
+                    </div>
+
+                    <div class="px-3 py-3 bg-white/10 border border-white/20 rounded-full flex items-center gap-2">
+                        <i data-lucide="settings" class="w-4 h-4 hilti-accent"></i>
+                        <span class="text-xs uppercase tracking-widest">Process Excellence</span>
+                    </div>
+
+                    <div class="px-3 py-3 bg-white/10 border border-white/20 rounded-full flex items-center gap-2">
+                        <i data-lucide="shield-check" class="w-4 h-4 hilti-accent"></i>
+                        <span class="text-xs uppercase tracking-widest">Product Compliance</span>
+                    </div>
+
+                    <div class="px-3 py-3 bg-white/10 border border-white/20 rounded-full flex items-center gap-2">
+                        <i data-lucide="rocket" class="w-4 h-4 hilti-accent"></i>
+                        <span class="text-xs uppercase tracking-widest">Project Ownership</span>
+                    </div>
+
+                </div>
+
+            <!-- CTA -->
+            <button 
+                class="hilti-button text-white px-8 py-3 rounded-full font-bold uppercase tracking-widest text-xs md:text-sm shadow-2xl"
+                onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+            >
+                Back to Start
+            </button>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-10 border-t border-white/10 text-center text-gray-500 text-[10px] uppercase tracking-[0.2em]">
+        <div>My Career Story – Product & Process Excellence</div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        const reveals = document.querySelectorAll(".reveal");
+        function reveal() {
+            reveals.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add("active");
+                }
+            });
+        }
+        window.addEventListener("scroll", reveal);
+        window.onload = reveal;
+
+        window.addEventListener('scroll', () => {
+            let current = "";
+            const sections = document.querySelectorAll("section");
+            const navLinks = document.querySelectorAll(".nav-link");
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute("id");
+                }
+            });
+            navLinks.forEach((link) => {
+                link.classList.remove("hilti-accent");
+                if (link.getAttribute("href").includes(current)) {
+                    link.classList.add("hilti-accent");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
