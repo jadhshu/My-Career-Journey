@@ -110,6 +110,7 @@
                 <span class="hilti-accent">MY</span> Journey
             </div>
             <div class="hidden md:flex space-x-4 lg:space-x-8 text-[10px] lg:text-xs font-semibold uppercase tracking-widest">
+                <a href="#intro" class="nav-link">Intro</a>
                 <a href="#section1" class="nav-link">17-19</a>
                 <a href="#section2" class="nav-link">20-21</a>
                 <a href="#section3" class="nav-link">22</a>
@@ -120,6 +121,56 @@
             </div>
         </div>
     </nav>
+ 
+    <!-- HERO INTRO SECTION -->
+    <section id="intro" class="section-bg min-h-screen flex items-center justify-center pt-24 py-16" style="background-image: url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop');">
+        <div class="overlay" style="background: linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.95) 100%);"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-6 md:px-12 text-center flex flex-col items-center justify-center reveal active">
+            <!-- Profile Image with Initials Fallback -->
+            <div class="mb-6 relative">
+                <div class="w-32 h-32 md:w-36 md:h-36 rounded-full border-4 border-white/10 overflow-hidden shadow-2xl bg-gradient-to-tr from-zinc-800 to-black flex items-center justify-center">
+                    <img src="profile.jpg" alt="Shubham Jadhav" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');">
+                    <span class="hidden text-4xl font-bold tracking-tight hilti-accent">SJ</span>
+                </div>
+            </div>
+            
+            <div class="mb-2 uppercase tracking-[0.4em] hilti-accent font-bold text-xs md:text-sm">My Journey</div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 tracking-tight text-white">Shubham Trimbak Jadhav</h1>
+            <p class="text-sm md:text-lg text-gray-300 font-semibold uppercase tracking-wider mb-6 leading-relaxed">
+                Engineering Professional <span class="hilti-accent">|</span> Project & Lifecycle Management Enthusiast
+            </p>
+            
+            <h2 class="text-lg md:text-xl font-semibold mb-6 max-w-3xl leading-snug italic text-white/90">
+                “Bridging engineering, product lifecycle, and structured project execution across complex systems”
+            </h2>
+            
+            <p class="text-sm md:text-base text-gray-400 mb-8 max-w-2xl leading-relaxed font-light">
+                Experienced in driving end-to-end product development, rigorous testing processes, master product compliance, and digital enablement initiatives. Ready to transition toward coordination, process improvement, and lifecycle management roles.
+            </p>
+            
+            <!-- Focus Areas -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12 max-w-3xl">
+                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs text-gray-300 flex items-center gap-2 hover:border-[#C00000] hover:bg-white/10 transition duration-300">
+                    <i data-lucide="folder-git-2" class="w-4 h-4 hilti-accent"></i> Project Coordination
+                </span>
+                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs text-gray-300 flex items-center gap-2 hover:border-[#C00000] hover:bg-white/10 transition duration-300">
+                    <i data-lucide="refresh-cw" class="w-4 h-4 hilti-accent"></i> Lifecycle Management (LCM)
+                </span>
+                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs text-gray-300 flex items-center gap-2 hover:border-[#C00000] hover:bg-white/10 transition duration-300">
+                    <i data-lucide="shield-check" class="w-4 h-4 hilti-accent"></i> Product Compliance
+                </span>
+                <span class="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-xs text-gray-300 flex items-center gap-2 hover:border-[#C00000] hover:bg-white/10 transition duration-300">
+                    <i data-lucide="users-2" class="w-4 h-4 hilti-accent"></i> Cross-functional Collaboration
+                </span>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="animate-bounce flex flex-col items-center gap-2 cursor-pointer" onclick="document.getElementById('section1').scrollIntoView({behavior: 'smooth'})">
+                <span class="text-[10px] uppercase tracking-[0.3em] text-gray-400 font-semibold">Scroll to explore journey</span>
+                <i data-lucide="chevron-down" class="w-5 h-5 hilti-accent"></i>
+            </div>
+        </div>
+    </section>
 
     <!-- SECTION 1: 2017–2019 -->
     <section id="section1" class="section-bg min-h-screen flex items-center pt-20" style="background-image: url('1.jpg');">
